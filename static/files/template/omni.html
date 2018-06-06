@@ -1,4 +1,5 @@
 <!-- MAGNET EDITOR -->
+<!--
 <div class="ui segment" ng-show="edit">
   <form class="ui edit form">
     <h4 class="ui dividing header">Magnet URI Editor</h4>
@@ -24,6 +25,7 @@
     </div>
   </form>
 </div>
+-->
 
 <!-- OMNI BAR -->
 <div class="omni ui fluid icon input">
@@ -47,6 +49,7 @@
 </div>
 
 <!-- SEARCH BUTTONS -->
+<!--
 <div class="search buttons" ng-show="mode.search && inputs.provider">
   <select class="ui green button" ng-model="inputs.provider" ng-options="id as s.name for (id, s) in providers">
   </select>
@@ -57,7 +60,7 @@
     <span ng-show="!noResults">Search</span>
   </div>
 </div>
-
+-->
 <div class="ui error message" ng-show="mode.search && !inputs.provider">
   <p>You have no search providers</p>
 </div>
@@ -94,7 +97,6 @@
   <div ng-click="submitTorrent()" class="ui tiny blue button" ng-class="{loading: apiing}">
     Load Magnet
   </div>
-  <div ng-show="mode.magnet" ng-click="edit = !edit" ng-class="{green: edit}" class="ui tiny button">Edit</div>
 </div>
 
 <!-- TORRENT BUTTON -->
